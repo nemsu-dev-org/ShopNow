@@ -7,6 +7,7 @@
 **A full-featured e-commerce web application built with Django, featuring a modern responsive design, comprehensive user management, and advanced shopping features.**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![CI](https://github.com/nemsu-dev-org/ShopNow/actions/workflows/ci.yml/badge.svg)](https://github.com/nemsu-dev-org/ShopNow/actions/workflows/ci.yml)
 [![Django](https://img.shields.io/badge/Django-5.2.4-green?style=for-the-badge&logo=django&logoColor=white)](https://djangoproject.com)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.7-purple?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
 
