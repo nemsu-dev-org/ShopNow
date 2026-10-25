@@ -46,6 +46,9 @@ SESSION_COOKIE_SECURE=True
 STRIPE_PUBLIC_KEY=your-stripe-public-key
 STRIPE_SECRET_KEY=your-stripe-secret-key
 
+# Currency (optional): Philippine pesos per US dollar, used to show prices in PHP
+USD_TO_PHP_RATE=59.41
+
 # Production Settings
 # DEBUG=False
 # ALLOWED_HOSTS=yourdomain.com,www.yourdomain.com
