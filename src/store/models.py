@@ -44,8 +44,8 @@ class Product(models.Model):
     
     @property
     def price_in_peso_value(self):
-        PHILIPPINE_PESO_TO_USD = Decimal("59.41")
-        return (self.price * PHILIPPINE_PESO_TO_USD).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
+        usd_to_php = settings.USD_TO_PHP_RATE
+        return (self.price * usd_to_php).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
 
     @property
     def price_in_peso(self):

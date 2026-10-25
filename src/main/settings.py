@@ -1,6 +1,7 @@
 from django.contrib.messages import constants as messages
 from dotenv import load_dotenv
 from decouple import config
+from decimal import Decimal
 from pathlib import Path
 import dj_database_url
 import os
@@ -107,6 +108,9 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = os.getenv('EMAIL_HOST_USER')
 RECAPTCHA_SITE_KEY = config('RECAPTCHA_SITE_KEY')
 RECAPTCHA_SECRET_KEY = config('RECAPTCHA_SECRET_KEY')
+
+# Philippine pesos per US dollar. Product prices are stored in USD and shown in PHP.
+USD_TO_PHP_RATE = config('USD_TO_PHP_RATE', default='59.41', cast=Decimal)
 
 # Django Allauth Settings
 SOCIALACCOUNT_PROVIDERS = {
